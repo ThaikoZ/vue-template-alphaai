@@ -1,12 +1,5 @@
-<script setup lang="ts">
-import { useThemeStore } from "@/stores/theme";
-
-const themeStore = useThemeStore();
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <div>
-    <h1></h1>
-    <button @click="themeStore.toggleTheme">Toggle Theme</button>
-  </div>
+  <div>Hello world</div>
 </template>
