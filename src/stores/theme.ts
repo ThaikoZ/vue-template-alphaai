@@ -2,9 +2,11 @@ import { defineStore } from "pinia";
 
 export type ThemeState = "light" | "dark";
 
+export const DEFAULT_THEME: ThemeState = "light";
+
 export const useThemeStore = defineStore("theme", {
   state: () => ({
-    theme: "light" as ThemeState,
+    theme: DEFAULT_THEME as ThemeState,
   }),
   actions: {
     setTheme(newTheme: ThemeState) {
